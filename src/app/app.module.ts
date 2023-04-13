@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavigationModule } from './core/components/navigation/navigation.module';
 import { APP_BASE_HREF } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -13,8 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ], 
   imports: [
     BrowserModule, 
-    NavigationModule, BrowserAnimationsModule
-    
+    NavigationModule, 
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
