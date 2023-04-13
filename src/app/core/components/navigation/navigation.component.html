@@ -1,10 +1,12 @@
-<mat-sidenav-container class="sidenav-container" *ngIf="shouldRun">
+<mat-sidenav-container class="sidenav-container">
     <mat-sidenav opened mode="side" class="mat-elevation-z8">
       <section class="logo-container">
         <utp-logo>
 
         </utp-logo>
       </section>
+
+      <a href="#"> Registro y Control</a>
     </mat-sidenav>
 
     <mat-sidenav-content>
@@ -14,8 +16,4 @@
   
   </mat-sidenav-container>
   
-  <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
-
-
-
-<!-- <utp-toolbar></utp-toolbar> -->
+<utp-toolbar></utp-toolbar>

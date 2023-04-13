@@ -9,7 +9,7 @@ const materialModules =[
     MatIconModule,
     MatButtonModule,
     MatSidenavModule
-]
+];
 
 @NgModule({
    imports: [
