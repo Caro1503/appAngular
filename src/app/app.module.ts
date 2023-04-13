@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavigationModule } from './core/components/navigation/navigation.module';
 import { APP_BASE_HREF } from '@angular/common';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
-    AppComponent, ToolbarComponent
+    AppComponent
   ], 
   imports: [
-    BrowserModule,
-    NavigationModule,
+    BrowserModule, 
+    NavigationModule, BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

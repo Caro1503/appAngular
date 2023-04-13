@@ -1,1 +1,21 @@
-<utp-toolbar></utp-toolbar>
+<mat-sidenav-container class="sidenav-container" *ngIf="shouldRun">
+    <mat-sidenav opened mode="side" class="mat-elevation-z8">
+      <section class="logo-container">
+        <utp-logo>
+
+        </utp-logo>
+      </section>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
+  
+  <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+
+
+
+<!-- <utp-toolbar></utp-toolbar> -->
